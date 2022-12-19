@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS</title>
+</head>
+
+<body>
+    <script>
+        // Concept of Scope
+        // const msg = "in global!";
+        // console.log("Global: message = " + msg);
+
+        // const a = function () {
+        //     const msg = "in a!";
+        //     console.log("A: message = " + msg);
+
+        //     const b = function () {
+        //         const msg = "in b!";
+        //         console.log("B: message = " + msg);
+        //     }
+
+        //     b();
+        // }
+
+        // a();
+
+        // function makeMultiplier(multitplier) {
+        //     const myFunc = function (x) {
+        //         return multitplier * x;
+        //     }
+
+        //     return myFunc;
+        // }
+
+        // const triple = makeMultiplier(3);
+        // const doOperation = (x, operation) => operation(x);
+        // const result = doOperation(33, triple);
+
+        // console.log(result);
+
+        // Concept of Function Constructor
+        // function Circle(radius) {
+        //     this.radius = radius;
+        // }
+
+        // Circle.prototype.getArea = function () {
+        //     return Math.PI * Math.pow(this.radius, 2);
+        // }
+
+        // const x = new Circle(10);
+        // console.log(x.getArea());
+
+        // Concept of Object
+        // const literalCircle = {
+        //     radius: 10,
+        //     getArea: function () {
+        //         const self = this;
+        //         const increaseRadius = function () {
+        //             self.radius = 20;
+        //         };
+
+        //         increaseRadius();
+
+        //         return Math.PI * Math.pow(self.radius, 2);
+        //     }
+        // }
+
+        // console.log("Area: ", literalCircle.getArea())
+
+        // // Concept of Array
+        // const array = new Array();
+        // array[0] = 0;
+        // array[1] = "Naman";
+        // array[2] = function (name){
+        //     console.log("Hello " + name);
+        // };
+        // array[3] = {
+        //     x: 1
+        // };
+
+        // array[2](array[1]);
+
+        // const animals = ["Dog", "Cat", "Lizard"];
+
+        // for (let animal in animals){
+        //     console.log(animals[animal]);
+        // }
+
+        // Object
+
+        // const myObj = {
+        //     x: 1,
+        //     y: 2
+        // }
+
+        // for (let prop in myObj){
+        //     console.log(prop + " : " + myObj[prop]);
+        // }
+
+        // Clousers
+
+        // function makeMultiplier(multitplier) {
+        //     return (
+        //         function (x) {
+        //             return multitplier * x;
+        //         }
+        //     );
+        // }
+
+        // var doubleAll = makeMultiplier(2);
+        // console.log(doubleAll(10));
+
+        // IIFE
+
+        // (function(window, name){
+        //     const greet = "Hello " + name;
+        //     window.greet = greet;
+        // })(window, "World");
+    </script>
+</body>
+
+</html>
