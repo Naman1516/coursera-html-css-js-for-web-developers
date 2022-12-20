@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5</title>
+</head>
+
+<body>
+    <p>
+        Say hello to
+        <input type="text" id="name" />
+        <button>Say it</button>
+
+    <div id="content"></div>
+    </p>
+    <script>
+        let counter = 0;
+        function sayHello() {
+            counter = localStorage.getItem("count");
+            this.textContent = ++counter;
+            localStorage.setItem("count", counter);
+            let name = document.getElementById('name').value;
+            if (name === "Naman") {
+                document.getElementById('content').textContent = name;
+            }
+            else {
+                document.querySelector('#content').textContent = "Hey " + name;
+            }
+        }
+
+        document.querySelector('button').onclick = sayHello;
+    </script>
+</body>
+
+</html>
